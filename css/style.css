@@ -6,6 +6,9 @@
 
 body {
     font-family: "Quicksand", sans-serif;
+    height: 100%;
+    margin: 0;
+    /* display: flex; */
 }
 
 .jumbotron {
@@ -48,32 +51,34 @@ nav a:hover {
   
 main {
     display: flex;
-    margin: 50px;
+    /* margin: 20px 50px; */
     flex-flow: column wrap;
+    /* flex: 1; */
 }
 
 h1 {
     font-weight: bolder;
     font-size: 50px;
-    line-height: 40px
+    line-height: 2px;
 }
 
-h5 {
-    /* color: var(--buttonColor); */
-    /* line-height: 35px; */
-    font-size: 14px;
+h3 {
+    color: var(--mainColor);
+    line-height: 35px;
+    font-size: 20px;
 }
 
 main .hero {
     display: flex;
+    gap: 50px;
+    justify-content: center;
     align-items: center;
-    height: 650px;
-    gap: 30px;
-    padding: 0 50px;
+    height: 100%;
+    margin-top: 100px;
 }
 
 main.hero-left {
-    gap: 20px;
+    gap: 10px;
 }
 
 main .hero .hero-right img {
@@ -81,15 +86,47 @@ main .hero .hero-right img {
 }
 
 main .hero .hero-left .subtittle {
-    color: var(--buttonColor);
     font-weight: bold;
     /* line-height: 30px; */
     font-style: italic;
+    font-weight: 18px;
 }
 
-footer {
+main .about-container {
+    font-size: 20px;
+    margin: 120px 200px;
+}
+
+main .education-container {
+    font-size: 20px;
+    margin: 120px 150px;
+}
+
+footer.home,
+footer.about,
+footer.education {
+    display: flex;
     font-size: 16px;
-    padding: 30px;
-    background-color: #E4E4E4;
+    background-color: var(--secondColor);
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 100px;
+    color: white;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer.gallery {
+    display: flex;
+    font-size: 16px;
+    background-color: var(--secondColor);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    color: white;
+    width: 100%;
 }
