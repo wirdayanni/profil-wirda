@@ -1,3 +1,9 @@
+:root{
+    --mainColor: #3A3E59;
+    --secondColor: #F37563;
+    --backgroundColor: #F1EAD1;
+}
+
 body {
     font-family: "Quicksand", sans-serif;
 }
@@ -5,9 +11,17 @@ body {
 .jumbotron {
     font-size: 20px;
     padding: 50px;
-    background-color: #2C2C2C;
+    background-color: var(--mainColor);
     text-align: center;
     color: white;
+}
+
+nav {
+    background-color: var(--secondColor);
+    align-items: baseline;
+    padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
 nav li {
@@ -15,16 +29,62 @@ nav li {
     list-style-type: none;
     margin-right: 20px;
 }
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1.5rem;     
+    border-radius: 999px;
+    transition: all 0.3s ease-in-out;
+}
   
-nav {
-    background-color: #E4E4E4;
-    padding: 5px;
-    position: sticky;
-    top: 0;
+nav a:hover {
+    font-weight: bold;
+    background-color: var(--backgroundColor);
+    color: black;
+}
+  
+main {
+    display: flex;
+    margin: 50px;
+    flex-flow: column wrap;
 }
 
-main {
-    margin: 50px;
+h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 40px
+}
+
+h5 {
+    /* color: var(--buttonColor); */
+    /* line-height: 35px; */
+    font-size: 14px;
+}
+
+main .hero {
+    display: flex;
+    align-items: center;
+    height: 650px;
+    gap: 30px;
+    padding: 0 50px;
+}
+
+main.hero-left {
+    gap: 20px;
+}
+
+main .hero .hero-right img {
+    height: 280px;
+}
+
+main .hero .hero-left .subtittle {
+    color: var(--buttonColor);
+    font-weight: bold;
+    /* line-height: 30px; */
+    font-style: italic;
 }
 
 footer {
@@ -33,4 +93,3 @@ footer {
     background-color: #E4E4E4;
     text-align: center;
 }
-
