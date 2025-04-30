@@ -8,6 +8,7 @@ body {
     font-family: "Quicksand", sans-serif;
     height: 100%;
     margin: 0;
+    background-color: var(--backgroundColor);
     /* display: flex; */
 }
 
@@ -129,4 +130,18 @@ footer.gallery {
     height: 100px;
     color: white;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    main .hero {
+        flex-direction: column-reverse; 
+        text-align: center;
+        height: auto;
+        padding: 150px 20px 60px 20px;
+        gap: 20px;
+    }
+
+    main .hero .hero-right img {
+    height: 250px;
+    }
 }
